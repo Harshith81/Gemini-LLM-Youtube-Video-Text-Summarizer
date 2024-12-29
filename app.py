@@ -46,7 +46,7 @@ youtube_link = st.text_input("Paste the YouTube Video Link Below and Press Enter
 if youtube_link:
     video_id = youtube_link.split("=")[1]
     print(video_id)
-    st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_column_width=True)
+    st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_container_width=True)
 
 if st.button("Get Summary"):
     transcript_text=extract_transcript_details(youtube_link)
